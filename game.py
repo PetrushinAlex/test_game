@@ -21,7 +21,7 @@ class Main(Frame):
             command=lambda x=3: self.btn_click(x)
         )
         
-        btn.place(x=10, y=100, width=120, height=50)
+        btn.place(x=20, y=100, width=120, height=50)
         btn2.place(x=155, y=100, width=120, height=50)
         btn3.place(x=300, y=100, width=120, height=50)
 
