@@ -8,7 +8,13 @@ class Main(Frame):
         self.startUI()
 
     def startUI(self):
-        pass
+        btn = Button(root, text="Камень", font=("Times New Roman", 15))
+        btn = Button(root, text="Ножницы", font=("Times New Roman", 15))
+        btn3 = Button(root, text="Бумага", font=("Times New Roman", 15))
+        
+        btn.place(x=10, y=100, width=120, height=50)
+        btn2.place(x=155, y=100, width=120, height=50)
+        btn3.place(x=300, y=100, width=120, height=50)
 
 
 if __name__ == '__main__':
