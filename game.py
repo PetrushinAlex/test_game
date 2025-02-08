@@ -22,8 +22,8 @@ class Main(Frame):
         )
         
         btn.place(x=20, y=100, width=120, height=50)
-        btn2.place(x=155, y=100, width=120, height=50)
-        btn3.place(x=300, y=100, width=120, height=50)
+        btn2.place(x=200, y=100, width=120, height=50)
+        btn3.place(x=450, y=100, width=120, height=50)
 
 
 if __name__ == '__main__':
