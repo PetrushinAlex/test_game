@@ -12,4 +12,11 @@ class Main(Frame):
 
 
 if __name__ == '__main__':
-    pass
+    root = Tk()
+    root.geometry("600x700+200+200")
+    root.title("Камень, ножницы, бумага")
+    root.resizable(False, False)
+    root["bg"] = "#FFF"
+    app = Main(root)
+    app.pack()
+    root.mainloop()
