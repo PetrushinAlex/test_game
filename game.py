@@ -8,12 +8,18 @@ class Main(Frame):
         self.startUI()
 
     def startUI(self):
-        btn = Button(root, text="Камень", font=("Times New Roman", 15),
-            command=lambda x=1: self.btn_click(x))
-        btn2 = Button(root, text="Ножницы", font=("Times New Roman", 15),
-            command=lambda x=2: self.btn_click(x))
-        btn3 = Button(root, text="Бумага", font=("Times New Roman", 15),
-            command=lambda x=3: self.btn_click(x))
+        btn = Button(
+            root, text="Камень", font=("Times New Roman", 20),
+            command=lambda x=1: self.btn_click(x)
+        )
+        btn2 = Button(
+            root, text="Ножницы", font=("Times New Roman", 20),
+            command=lambda x=2: self.btn_click(x)
+        )
+        btn3 = Button(
+            root, text="Бумага", font=("Times New Roman", 20),
+            command=lambda x=3: self.btn_click(x)
+        )
         
         btn.place(x=10, y=100, width=120, height=50)
         btn2.place(x=155, y=100, width=120, height=50)
