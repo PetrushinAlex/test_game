@@ -20,15 +20,15 @@ class Main(Frame):
             root, text="Бумага", font=("Times New Roman", 20),
             command=lambda x=3: self.btn_click(x)
         )
-        
-        btn.place(x=20, y=100, width=120, height=50)
-        btn2.place(x=155, y=100, width=120, height=50)
-        btn3.place(x=300, y=100, width=120, height=50)
+
+        btn.place(x=40, y=100, width=120, height=50)
+        btn2.place(x=200, y=100, width=120, height=50)
+        btn3.place(x=480, y=100, width=120, height=50)
 
 
 if __name__ == '__main__':
     root = Tk()
-    root.geometry('1000x1200+200+200')
+    root.geometry('1200x1400+200+200')
     root.title('Камень, ножницы, бумага')
     root.resizable(False, False)
     root['bg'] = '#90EE90'
