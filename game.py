@@ -20,10 +20,10 @@ class Main(Frame):
             root, text="Бумага", font=("Times New Roman", 20),
             command=lambda x=3: self.btn_click(x)
         )
-
-        btn.place(x=40, y=100, width=120, height=50)
+        
+        btn.place(x=20, y=100, width=120, height=50)
         btn2.place(x=200, y=100, width=120, height=50)
-        btn3.place(x=480, y=100, width=120, height=50)
+        btn3.place(x=450, y=100, width=120, height=50)
 
 
 if __name__ == '__main__':
