@@ -25,6 +25,22 @@ class Main(Frame):
         btn2.place(x=240, y=100, width=120, height=50)
         btn3.place(x=480, y=100, width=120, height=50)
 
+        self.lbl = Label(root, text="Начало игры!", bg="#FFF", font=("Times New Roman", 21, "bold"))
+        self.lbl.place(x=150, y=25)
+
+        self.win = self.drow = self.lose = 0
+
+        self.lbl2 = Label(
+            root, justify="left", font=("Times New Roman", 13),
+            text=f"Побед: {self.win}\nПроигрышей:"
+                 f" {self.lose}\nНичей: {self.drow}",
+            bg="#FFF"
+        )
+        self.lbl2.place(x=5, y=5)
+
+    def btn_click(self, choise):
+        pass
+
 
 if __name__ == '__main__':
     root = Tk()
