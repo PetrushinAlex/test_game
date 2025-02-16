@@ -39,7 +39,26 @@ class Main(Frame):
         self.lbl2.place(x=15, y=15)
 
     def btn_click(self, choise):
-        pass
+        comp_choise = rm.randint(1, 3)
+
+        if choise == comp_choise:
+            self.drow += 1
+            self.lbl.configure(text="Ничья")
+        elif choise == 1 and comp_choise == 2 \
+                or choise == 2 and comp_choise == 3 \
+                or choise == 3 and comp_choise == 1:
+            self.win += 1
+            self.lbl.configure(text="Победа")
+        else:
+            self.lose += 1
+            self.lbl.configure(text="Проигрыш")
+
+        self.lbl2.configure(
+            text=f"Побед: {self.win}\nПроигрышей:"
+                 f" {self.lose}\nНичей: {self.drow}"
+        )
+
+        del comp_choise
 
 
 if __name__ == '__main__':
