@@ -38,8 +38,25 @@ class Main(Frame):
         )
         self.lbl2.place(x=15, y=15)
 
+        self.comp_choise_lbl = Label(
+            root,
+            text='',
+            bg='#FFF',
+            font=('Arial', 16)
+        )
+        self.comp_choise_lbl.place(x=15, y=150)
+
     def btn_click(self, choise):
         comp_choise = rm.randint(1, 3)
+
+        choises = {
+            1: 'Камень',
+            2: 'Ножницы',
+            3: 'Бумага',
+        }
+        self.comp_choise_lbl.configure(
+            text=f'Компьютер выбрал {choises[comp_choise]}'
+        )
 
         if choise == comp_choise:
             self.drow += 1
